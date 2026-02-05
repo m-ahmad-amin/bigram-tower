@@ -49,6 +49,7 @@ export default function App(): JSX.Element {
   const [demoUndo, setDemoUndo] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false); // leader board state
   const [showArchive, setShowArchive] = useState(false); // archive state
+  const [isTowerShaking, setIsTowerShaking] = useState(false); // shake state
 
   // Use refs
   const prevTowerLengthRef = React.useRef(0);
@@ -220,6 +221,9 @@ export default function App(): JSX.Element {
       } else {
         wrongSound.play().catch(() => {});
         setScore((prev) => prev - 25);
+
+        setIsTowerShaking(true);
+        setTimeout(() => setIsTowerShaking(false), 500);
       }
     }
 
@@ -370,7 +374,10 @@ export default function App(): JSX.Element {
               </div>
 
               {/* Tower container */}
-              <div className="relative w-40 h-[95%] rounded-xl border border-[#c9ada7] overflow-hidden bg-gradient-to-b from-[#1a1a2e] to-[#22223b] shadow-[0_0_40px_rgba(255,200,100,0.15)]">
+              <div
+                className={`relative w-40 h-[95%] rounded-xl border border-[#c9ada7] overflow-hidden bg-gradient-to-b from-[#1a1a2e] to-[#22223b] shadow-[0_0_40px_rgba(255,200,100,0.15)]
+                ${isTowerShaking ? 'shake' : ''}`}
+              >
                 {/* Particle layer */}
                 <div className="absolute inset-0 pointer-events-none">
                   <div className="magic-particles" />
