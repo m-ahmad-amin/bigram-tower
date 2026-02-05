@@ -23,7 +23,7 @@ export default function App(): JSX.Element {
 
   // Data
   const todayEntry = bigramData.dailyBigramTower.find((entry) => entry.date === currentDate);
-  const startDate = new Date('2026-01-31');
+  const startDate = new Date('2026-02-05');
   const dayNumber = currentDate
     ? Math.floor((new Date(currentDate).getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) +
       1
@@ -234,6 +234,7 @@ export default function App(): JSX.Element {
       try {
         const newRes = await fetch(`/api/check-new?username=${username}`);
         const newData = await newRes.json();
+        console.log(newData);
         if (newData.new === 'yes') {
           setIsNewUser(true);
           setShowHelp(true);
@@ -334,7 +335,7 @@ export default function App(): JSX.Element {
             <input
               type="date"
               value={currentDate}
-              min="2026-01-31"
+              min="2026-02-05"
               max={new Date().toISOString().split('T')[0]}
               onChange={(e) => {
                 setCurrentDate(e.target.value);
@@ -459,7 +460,7 @@ export default function App(): JSX.Element {
 
           {showArchive && (
             <ArchiveModal
-              startDate="2026-01-31"
+              startDate="2026-02-05"
               currentDate={currentDate!}
               onClose={() => setShowArchive(false)}
               onSelectDate={(date) => {

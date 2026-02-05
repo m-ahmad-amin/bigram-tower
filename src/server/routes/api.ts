@@ -107,7 +107,7 @@ router.get('/api/has-played', async (req, res) => {
     if (isNaN(selectedDate.getTime()))
       return res.status(400).json({ status: 'error', message: 'Invalid date' });
 
-    const startDate = new Date('2026-01-31');
+    const startDate = new Date('2026-02-05');
     const dayNumber =
       Math.floor((selectedDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) + 1;
 
