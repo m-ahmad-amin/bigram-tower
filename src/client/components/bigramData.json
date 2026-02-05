@@ -1,0 +1,178 @@
+{
+  "dailyBigramTower": [
+    {
+      "date": "2026-01-31",
+      "theme": "Urban Life",
+      "shuffled": ["street", "light", "house", "fire", "dog", "work", "hot"],
+      "solution": ["hot", "dog", "house", "work", "fire", "street", "light"]
+    },
+    {
+      "date": "2026-02-01",
+      "theme": "Space Travel",
+      "shuffled": ["star", "ship", "wreck", "ship", "light", "year", "book"],
+      "solution": ["star", "light", "year", "book", "ship", "wreck", "age"]
+    },
+    {
+      "date": "2026-02-02",
+      "theme": "Nature",
+      "shuffled": ["rain", "forest", "fire", "fly", "wheel", "chair", "man"],
+      "solution": ["rain", "forest", "fire", "fly", "wheel", "chair", "man"]
+    },
+    {
+      "date": "2026-02-03",
+      "theme": "Office",
+      "shuffled": ["paper", "weight", "loss", "leader", "board", "room", "service"],
+      "solution": ["paper", "weight", "loss", "leader", "board", "room", "service"]
+    },
+    {
+      "date": "2026-02-04",
+      "theme": "Foodie",
+      "shuffled": ["honey", "comb", "over", "time", "table", "cloth", "spin"],
+      "solution": ["honey", "comb", "over", "time", "table", "cloth", "spin"]
+    },
+    {
+      "date": "2026-02-05",
+      "theme": "Garden",
+      "shuffled": ["sun", "flower", "bed", "time", "piece", "work", "shop"],
+      "solution": ["sun", "flower", "bed", "time", "piece", "work", "shop"]
+    },
+    {
+      "date": "2026-02-06",
+      "theme": "Winter",
+      "shuffled": ["snow", "ball", "room", "mate", "ship", "shape", "shift"],
+      "solution": ["snow", "ball", "room", "mate", "ship", "shape", "shift"]
+    },
+    {
+      "date": "2026-02-07",
+      "theme": "Action",
+      "shuffled": ["head", "strong", "hold", "up", "set", "back", "track"],
+      "solution": ["head", "strong", "hold", "up", "set", "back", "track"]
+    },
+    {
+      "date": "2026-02-08",
+      "theme": "Morning",
+      "shuffled": ["break", "fast", "food", "chain", "mail", "box", "car"],
+      "solution": ["break", "fast", "food", "chain", "mail", "box", "car"]
+    },
+    {
+      "date": "2026-02-09",
+      "theme": "Coast",
+      "shuffled": ["sand", "castle", "wall", "paper", "trail", "mix", "up"],
+      "solution": ["sand", "castle", "wall", "paper", "trail", "mix", "up"]
+    },
+    {
+      "date": "2026-02-10",
+      "theme": "Night",
+      "shuffled": ["star", "fish", "tank", "top", "side", "walk", "way"],
+      "solution": ["star", "fish", "tank", "top", "side", "walk", "way"]
+    },
+    {
+      "date": "2026-02-11",
+      "theme": "Sport",
+      "shuffled": ["base", "ball", "park", "way", "side", "kick", "start"],
+      "solution": ["base", "ball", "park", "way", "side", "kick", "start"]
+    },
+    {
+      "date": "2026-02-12",
+      "theme": "Craft",
+      "shuffled": ["hand", "made", "up", "stairs", "case", "study", "hall"],
+      "solution": ["hand", "made", "up", "stairs", "case", "study", "hall"]
+    },
+    {
+      "date": "2026-02-13",
+      "theme": "Kitchen",
+      "shuffled": ["tea", "pot", "hole", "punch", "line", "dance", "floor"],
+      "solution": ["tea", "pot", "hole", "punch", "line", "dance", "floor"]
+    },
+    {
+      "date": "2026-02-14",
+      "theme": "Romance",
+      "shuffled": ["heart", "beat", "down", "town", "hall", "mark", "up"],
+      "solution": ["heart", "beat", "down", "town", "hall", "mark", "up"]
+    },
+    {
+      "date": "2026-02-15",
+      "theme": "Energy",
+      "shuffled": ["wind", "mill", "stone", "cold", "front", "door", "step"],
+      "solution": ["wind", "mill", "stone", "cold", "front", "door", "step"]
+    },
+    {
+      "date": "2026-02-16",
+      "theme": "Sky",
+      "shuffled": ["blue", "bird", "house", "boat", "race", "track", "field"],
+      "solution": ["blue", "bird", "house", "boat", "race", "track", "field"]
+    },
+    {
+      "date": "2026-02-17",
+      "theme": "Money",
+      "shuffled": ["gold", "mine", "field", "trip", "wire", "less", "stress"],
+      "solution": ["gold", "mine", "field", "trip", "wire", "less", "stress"]
+    },
+    {
+      "date": "2026-02-18",
+      "theme": "Travel",
+      "shuffled": ["air", "port", "land", "lord", "ship", "wreck", "age"],
+      "solution": ["air", "port", "land", "lord", "ship", "wreck", "age"]
+    },
+    {
+      "date": "2026-02-19",
+      "theme": "Clothing",
+      "shuffled": ["tie", "break", "down", "fall", "guy", "wire", "mesh"],
+      "solution": ["tie", "break", "down", "fall", "guy", "wire", "mesh"]
+    },
+    {
+      "date": "2026-02-20",
+      "theme": "Body",
+      "shuffled": ["eye", "brow", "beat", "box", "car", "wash", "out"],
+      "solution": ["eye", "brow", "beat", "box", "car", "wash", "out"]
+    },
+    {
+      "date": "2026-02-21",
+      "theme": "Home",
+      "shuffled": ["key", "board", "walk", "way", "fare", "well", "done"],
+      "solution": ["key", "board", "walk", "way", "fare", "well", "done"]
+    },
+    {
+      "date": "2026-02-22",
+      "theme": "Work",
+      "shuffled": ["job", "search", "light", "weight", "lift", "off", "set"],
+      "solution": ["job", "search", "light", "weight", "lift", "off", "set"]
+    },
+    {
+      "date": "2026-02-23",
+      "theme": "Sea",
+      "shuffled": ["jelly", "fish", "hook", "line", "up", "grade", "school"],
+      "solution": ["jelly", "fish", "hook", "line", "up", "grade", "school"]
+    },
+    {
+      "date": "2026-02-24",
+      "theme": "Health",
+      "shuffled": ["back", "bone", "dry", "run", "away", "side", "show"],
+      "solution": ["back", "bone", "dry", "run", "away", "side", "show"]
+    },
+    {
+      "date": "2026-02-25",
+      "theme": "Media",
+      "shuffled": ["news", "cast", "off", "spring", "time", "table", "top"],
+      "solution": ["news", "cast", "off", "spring", "time", "table", "top"]
+    },
+    {
+      "date": "2026-02-26",
+      "theme": "Science",
+      "shuffled": ["life", "span", "width", "wise", "crack", "pot", "luck"],
+      "solution": ["life", "span", "width", "wise", "crack", "pot", "luck"]
+    },
+    {
+      "date": "2026-02-27",
+      "theme": "Safety",
+      "shuffled": ["life", "guard", "rail", "road", "block", "head", "light"],
+      "solution": ["life", "guard", "rail", "road", "block", "head", "light"]
+    },
+    {
+      "date": "2026-02-28",
+      "theme": "Conclusion",
+      "shuffled": ["end", "point", "blank", "slate", "work", "shop", "floor"],
+      "solution": ["end", "point", "blank", "slate", "work", "shop", "floor"]
+    }
+  ]
+}
