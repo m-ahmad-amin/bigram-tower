@@ -51,3 +51,12 @@
 .shake {
   animation: shake 0.5s ease-in-out;
 }
+
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
