@@ -9,4 +9,4 @@ yarn-error.log*
 webroot
 dist
 .env
-.src/client/components/bigramData.json
+src/client/components/bigramData.json
