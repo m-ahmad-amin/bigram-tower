@@ -13,6 +13,7 @@ interface HeaderProps {
   winSound: HTMLAudioElement;
   setShowHelp: (val: boolean) => void;
   setIsRunning: (val: boolean) => void;
+  penaltyTime: number;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -26,6 +27,7 @@ const Header: React.FC<HeaderProps> = ({
   winSound,
   setShowHelp,
   setIsRunning,
+  penaltyTime
 }) => {
   return (
     <header className="bg-[#22223b] h-[10%] flex justify-between items-center px-5">
@@ -38,10 +40,11 @@ const Header: React.FC<HeaderProps> = ({
           isRunning={isRunning}
           reset={resetTimer}
           onResetComplete={() => setResetTimer(false)}
+          penaltyTime={penaltyTime}
           onTimeUpdate={(time) => {
-            const isWin = 
-              !isRunning && 
-              towerBlocks.length === solution.length && 
+            const isWin =
+              !isRunning &&
+              towerBlocks.length === solution.length &&
               towerBlocks.every((block, i) => block === solution[i]);
 
             if (isWin) {
@@ -51,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({
           }}
         />
       </div>
-      
+
       <div className="w-[20%] flex justify-end gap-2">
         <FaQuestionCircle
           size={25}

@@ -50,6 +50,7 @@ export default function App(): JSX.Element {
   const [showLeaderboard, setShowLeaderboard] = useState(false); // leader board state
   const [showArchive, setShowArchive] = useState(false); // archive state
   const [isTowerShaking, setIsTowerShaking] = useState(false); // shake state
+  const [penaltyTime, setPenaltyTime] = useState(0); // penalty state
 
   // Use refs
   const prevTowerLengthRef = React.useRef(0);
@@ -221,6 +222,7 @@ export default function App(): JSX.Element {
       } else {
         wrongSound.play().catch(() => {});
         setScore((prev) => prev - 25);
+        setPenaltyTime(prev => prev + 10);
 
         setIsTowerShaking(true);
         setTimeout(() => setIsTowerShaking(false), 500);
@@ -333,6 +335,7 @@ export default function App(): JSX.Element {
             winSound={winSound}
             setShowHelp={setShowHelp}
             setIsRunning={setIsRunning}
+            penaltyTime={penaltyTime}
           />
           {/* <div className="flex items-center justify-center my-2">
             <label className="text-white mr-2 font-medium">Select Date:</label>

@@ -1,15 +1,28 @@
-import { useStopwatch } from "react-timer-hook";
-import { JSX, useEffect } from "react";
+import { useStopwatch } from 'react-timer-hook';
+import { JSX, useEffect } from 'react';
 
 interface TimerProps {
   isRunning: boolean;
   onTimeUpdate?: (time: string) => void;
   reset?: boolean;
   onResetComplete?: () => void;
+  penaltyTime?: number;
 }
 
-export default function Timer({ isRunning, onTimeUpdate, reset, onResetComplete }: TimerProps): JSX.Element {
-  const { seconds, minutes, pause, start, reset: resetStopwatch } = useStopwatch({ autoStart: true });
+export default function Timer({
+  isRunning,
+  onTimeUpdate,
+  reset,
+  onResetComplete,
+  penaltyTime,
+}: TimerProps): JSX.Element {
+  const {
+    seconds,
+    minutes,
+    pause,
+    start,
+    reset: resetStopwatch,
+  } = useStopwatch({ autoStart: true });
 
   useEffect(() => {
     if (isRunning) {
@@ -21,8 +34,8 @@ export default function Timer({ isRunning, onTimeUpdate, reset, onResetComplete 
 
   useEffect(() => {
     if (reset) {
-      resetStopwatch(undefined); 
-      onResetComplete?.(); 
+      resetStopwatch(undefined);
+      onResetComplete?.();
     }
   }, [reset, resetStopwatch, onResetComplete]);
 
@@ -35,15 +48,24 @@ export default function Timer({ isRunning, onTimeUpdate, reset, onResetComplete 
       }
     };
 
-    document.addEventListener("visibilitychange", handleVisibilityChange);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
     return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, [pause, start, isRunning]);
 
   useEffect(() => {
-    onTimeUpdate?.(`${minutes}:${seconds.toString().padStart(2, "0")}`);
-  }, [minutes, seconds, onTimeUpdate]);
+    const totalSeconds = minutes * 60 + seconds + (penaltyTime || 0);
+    const displayMinutes = Math.floor(totalSeconds / 60);
+    const displaySeconds = totalSeconds % 60;
 
-  return <div>{minutes}:{seconds.toString().padStart(2, "0")}</div>;
+    onTimeUpdate?.(`${displayMinutes}:${displaySeconds.toString().padStart(2, '0')}`);
+  }, [minutes, seconds, onTimeUpdate, penaltyTime]);
+
+  return (
+    <div>
+      {Math.floor((minutes * 60 + seconds + (penaltyTime || 0)) / 60)}:
+      {((minutes * 60 + seconds + (penaltyTime || 0)) % 60).toString().padStart(2, '0')}
+    </div>
+  );
 }
