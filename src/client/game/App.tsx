@@ -378,8 +378,7 @@ export default function App(): JSX.Element {
 
               {/* Tower container */}
               <div
-                className={`relative w-40 h-[95%] rounded-xl border border-[#c9ada7] overflow-hidden bg-gradient-to-b from-[#1a1a2e] to-[#22223b] shadow-[0_0_40px_rgba(255,200,100,0.15)]
-                ${isTowerShaking ? 'shake' : ''}`}
+                className={`relative w-40 h-[95%] rounded-xl border border-[#c9ada7] overflow-hidden bg-gradient-to-b from-[#1a1a2e] to-[#22223b] shadow-[0_0_40px_rgba(255,200,100,0.15)]`}
               >
                 {/* Particle layer */}
                 <div className="absolute inset-0 pointer-events-none">
