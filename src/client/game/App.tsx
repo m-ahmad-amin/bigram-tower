@@ -23,6 +23,7 @@ export default function App(): JSX.Element {
 
   // Data
   const todayEntry = bigramData.dailyBigramTower.find((entry) => entry.date === currentDate);
+  const dayTheme = todayEntry?.theme ?? '';
   const startDate = new Date('2026-02-05');
   const dayNumber = currentDate
     ? Math.floor((new Date(currentDate).getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) +
@@ -224,7 +225,7 @@ export default function App(): JSX.Element {
       } else {
         wrongSound.play().catch(() => {});
         setScore((prev) => prev - 25);
-        setPenaltyTime(prev => prev + 10);
+        setPenaltyTime((prev) => prev + 10);
 
         setIsTowerShaking(true);
         setTimeout(() => setIsTowerShaking(false), 500);
@@ -320,8 +321,22 @@ export default function App(): JSX.Element {
     <div className="h-screen bg-[#4a4e69] relative">
       {/* If Loading */}
       {loading || !userStatusChecked ? (
-        <div className="h-full w-full flex items-center justify-center text-white text-2xl font-bold">
-          Loading...
+        <div className="h-full w-full flex flex-col items-center justify-center text-white">
+          <p className="text-xl font-semibold mb-2">Day {dayNumber}</p>
+          <p className="text-md mb-6">{dayTheme}</p>
+          <div className="relative w-20 h-20">
+            <div className="absolute inset-0 rounded-full border-4 border-t-yellow-400 border-b-purple-500 animate-spin"></div>
+            <div className="absolute inset-0 flex items-center justify-center space-x-1">
+              {[...Array(3)].map((_, i) => (
+                <div
+                  key={i}
+                  className="w-4 h-4 bg-yellow-400 rounded animate-bounce"
+                  style={{ animationDelay: `${i * 0.2}s` }}
+                />
+              ))}
+            </div>
+          </div>
+          <p className="mt-6 text-lg font-medium animate-pulse">Loading tower...</p>
         </div>
       ) : (
         // If has loaded
@@ -357,6 +372,7 @@ export default function App(): JSX.Element {
 
           {/* Pair */}
           <h1 className="text-gray-200 text-center text-md font-medium m-2">
+            {/* {dayTheme}<br></br> */}
             {towerBlocks.length > 0
               ? towerBlocks[towerBlocks.length - 1] + ' ______'
               : `Hint: Starts with ${solution[0]}`}

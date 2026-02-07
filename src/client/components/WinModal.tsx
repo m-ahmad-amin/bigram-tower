@@ -32,7 +32,7 @@ const WinModal: React.FC<WinModalProps> = ({
             <p className="text-gray-400 text-[10px] uppercase font-bold">
               Time
             </p>
-            <p className="text-xl text-white font-mono font-bold">
+            <p className="text-xl text-yellow-400 font-mono font-bold">
               {completedTime}
             </p>
           </div>
@@ -41,7 +41,7 @@ const WinModal: React.FC<WinModalProps> = ({
             <p className="text-gray-400 text-[10px] uppercase font-bold">
               Score
             </p>
-            <p className="text-xl text-yellow-400 font-mono font-bold">
+            <p className="text-xl text-white font-mono font-bold">
               {score.toLocaleString()}
             </p>
           </div>
