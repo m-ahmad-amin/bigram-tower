@@ -318,7 +318,7 @@ export default function App(): JSX.Element {
   }, [showHelp, solution]);
 
   return (
-    <div className="h-screen bg-[#4a4e69] relative">
+    <div className="h-screen bg-[#22223b] relative">
       {/* If Loading */}
       {loading || !userStatusChecked ? (
         <div className="h-full w-full flex flex-col items-center justify-center text-white">
