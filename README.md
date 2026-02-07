@@ -1,31 +1,51 @@
-## Devvit React Starter
+# 🏗️ Bigram-Tower
+Arrange shuffled words into **bigram chains**, build towers, and compete on the **leaderboard** in this fun, time-based Reddit web game.
+![Puzzle Game](assets/logo/logo1.png)
 
-A starter to build web applications on Reddit's developer platform
+## Table of Contents
+- [Features](#features)
+- [How to Play](#how-to-play)
+- [Tech Stack](#tech-stack)
+- [License](#license)
 
-- [Devvit](https://developers.reddit.com/): A way to build and deploy immersive games on Reddit
-- [Vite](https://vite.dev/): For compiling the webView
-- [React](https://react.dev/): For UI
-- [Express](https://expressjs.com/): For backend logic
-- [Tailwind](https://tailwindcss.com/): For styles
-- [Typescript](https://www.typescriptlang.org/): For type safety
+## Features
+- **Daily Puzzles:** A new word tower challenge every day  
+- **Speed-Based Scoring:** The faster you build, the higher your score  
+- **Penalty for Mistakes:** Incorrect placements add penalty time  
+- **Undo Last Move:** Fix mistakes without restarting  
+- **Leaderboards:** Compete with friends and other players  
+- **Help & Demo:** Interactive tutorial for new users  
+- **Archive:** Revisit past daily puzzles anytime  
 
-## Getting Started
+## How to Play
+1. Drag or click words from the **word pool** to the **tower**.  
+2. Arrange words to form correct **bigram chains**. Example: `"machine learning"`.  
+3. Correct placements increase your score; wrong placements add **penalty time**.  
+4. Complete the tower as **fast as possible** to climb the **daily leaderboard**.  
+5. Use the **undo button** if you make a mistake.  
+6. **Tips:**  
+   - Start with the block mentioned in the hint.
+   - Place blocks quickly, but carefully, to maximize your score.  
+   - Use the demo/tutorial if you are a new player.  
 
-> Make sure you have Node 22 downloaded on your machine before running!
+## Tech Stack
+![React](https://img.shields.io/badge/React-19.1.0-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.6-cyan)
+![Express](https://img.shields.io/badge/Express-5.1.0-lightgrey)
+![Devvit](https://img.shields.io/badge/Devvit-0.12.10-orange)
+![Redis](https://img.shields.io/badge/Redis-7.2-red)
 
-1. Run `npm create devvit@latest --template=react`
-2. Go through the installation wizard. You will need to create a Reddit account and connect it to Reddit developers
-3. Copy the command on the success page into your terminal
+**Frontend:**  
+- React + TypeScript: Component-based UI for tower, word pool, and modals  
+- TailwindCSS: Beautiful, responsive styling
 
-## Commands
+**Backend:**  
+- Devvit Web Framework: API endpoints for daily puzzles, user progress, and leaderboard  
+- Redis: Fast in-memory database for storing user scores and tower states  
+- Express: Middleware for routing and request handling   
 
-- `npm run dev`: Starts a development server where you can develop your application live on Reddit.
-- `npm run build`: Builds your client and server projects
-- `npm run deploy`: Uploads a new version of your app
-- `npm run launch`: Publishes your app for review
-- `npm run login`: Logs your CLI into Reddit
-- `npm run check`: Type checks, lints, and prettifies your app
+## License
+![License](https://img.shields.io/badge/License-BSD--3--Clause-green)
 
-## Cursor Integration
-
-This template comes with a pre-configured cursor environment. To get started, [download cursor](https://www.cursor.com/downloads) and enable the `devvit-mcp` when prompted.
+This project is licensed under the [BSD 3-Clause License](LICENSE).
