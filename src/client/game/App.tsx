@@ -142,6 +142,7 @@ export default function App(): JSX.Element {
     setCompletedTime(null);
     setIsRunning(true);
     setResetTimer(true);
+    setPenaltyTime(0);
     setScore(0);
     hasSavedRef.current = false;
   };
@@ -157,6 +158,7 @@ export default function App(): JSX.Element {
     setAvailableBlocks(todayEntry.shuffled);
     setSolution(todayEntry.solution);
     setCompletedTime(null);
+    setPenaltyTime(0);
     setScore(0);
     setIsRunning(true);
     setResetTimer(true);
@@ -254,6 +256,7 @@ export default function App(): JSX.Element {
         console.log(playedData);
         if (playedData.played === 'yes') {
           setCompletedTime(playedData.bestTime || null);
+          setPenaltyTime(0);
           setScore(playedData.bestTimeScore || 0);
           setIsRunning(false);
         }
