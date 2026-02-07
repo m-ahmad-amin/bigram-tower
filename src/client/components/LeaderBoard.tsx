@@ -53,10 +53,10 @@ const LeaderboardModal: React.FC<LeaderboardModalProps> = ({ dayNumber, username
 
   return (
     <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-      <div className="bg-[#22223b] rounded-xl p-6 w-[90%] max-w-md flex flex-col gap-4 relative">
+      <div className="bg-[#22223b] rounded-xl p-6 w-[90%] max-w-md flex flex-col gap-4 relative h-[80vh]">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-white font-bold text-xl hover:text-yellow-400 transition"
+          className="absolute top-2 right-2 text-white font-bold text-xl hover:cursor-pointer transition"
         >
           ✕
         </button>
