@@ -40,7 +40,7 @@ export default function TowerBlock({
           alignItems: 'center',
           justifyContent: 'center',
           backdropFilter: 'blur(6px)',
-          border: '1px solid rgba(255,255,255,0.5)',
+          border: isUndo ? '2px dashed rgba(255,255,255,0.5)' : '1px solid rgba(255,255,255,0.5)',
           color: 'white',
           fontWeight: 600,
           letterSpacing: '0.05em',
