@@ -1,6 +1,6 @@
 # 🏗️ Bigram-Tower
 Arrange shuffled words into **bigram chains**, build towers, and compete on the **leaderboard** in this fun, time-based Reddit web game.
-![Puzzle Game](https://res.cloudinary.com/dzzrxqiho/image/upload/v1770664292/logo1_ofbelw.png)
+![Puzzle Game](https://res.cloudinary.com/dzzrxqiho/image/upload/v1770673409/Sheets_Modals_3_1_rwtjqo.png)
 
 ## Table of Contents
 - [Features](#features)
@@ -29,14 +29,9 @@ Arrange shuffled words into **bigram chains**, build towers, and compete on the 
    - Start with the block mentioned in the hint.
    - Place blocks quickly, but carefully, to maximize your score.  
    - Use the demo/tutorial if you are a new player.
-<img src="https://res.cloudinary.com/dzzrxqiho/image/upload/v1770664495/demo_dhllvy.png" width="400" alt="Demo">
 
 ## Demo Screenshots
-<div style="display: flex; gap: 10px; align-items: center;">
-  <img src="https://res.cloudinary.com/dzzrxqiho/image/upload/v1770664986/loading_zydcqz.png" width="300" />
-  <img src="https://res.cloudinary.com/dzzrxqiho/image/upload/v1770664780/main_yoow1f.png" width="300" />
-  <img src="https://res.cloudinary.com/dzzrxqiho/image/upload/v1770665213/howToPlay_wssg0d.png" width="300" />
-</div>
+![Demo Screenshots](https://res.cloudinary.com/dzzrxqiho/image/upload/v1770672799/Frame_1_1_mtrwaf.png)
 
 ## Tech Stack
 ![React](https://img.shields.io/badge/React-19.1.0-blue)
