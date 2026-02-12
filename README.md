@@ -11,7 +11,7 @@ Arrange shuffled words into **bigram chains**, build towers, and compete on the 
 - [Tech Stack](#tech-stack)
 - [License](#license)
 
-## Features
+## Features and Functionality
 - **Daily Puzzles:** A new word tower challenge every day
 - **Theme-based:** Each day, new tower with new theme
 - **Speed-Based Scoring:** The faster you build, the higher your score  
