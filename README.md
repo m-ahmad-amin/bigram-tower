@@ -1,11 +1,13 @@
 # 🏗️ Bigram-Tower
 Arrange shuffled words into **bigram chains**, build towers, and compete on the **leaderboard** in this fun, time-based Reddit web game.
-![Puzzle Game](https://res.cloudinary.com/dzzrxqiho/image/upload/v1770673409/Sheets_Modals_3_1_rwtjqo.png)
+
+![Puzzle Game](https://res.cloudinary.com/dzzrxqiho/image/upload/v1770913567/Sheets_Modals_3_1_1_tig11m.png)
 
 ## Table of Contents
 - [Features](#features)
 - [How to Play](#how-to-play)
 - [Demo Screenshots](#demo-screenshots)
+- [Live Demo on Reddit](#live-demo-on-reddit)
 - [Tech Stack](#tech-stack)
 - [License](#license)
 
@@ -32,6 +34,10 @@ Arrange shuffled words into **bigram chains**, build towers, and compete on the 
 
 ## Demo Screenshots
 ![Demo Screenshots](https://res.cloudinary.com/dzzrxqiho/image/upload/v1770672799/Frame_1_1_mtrwaf.png)
+
+## Live Demo on Reddit
+This game is built using **Reddit’s Developer Platform (Devvit)** and runs directly inside Reddit.
+You can play **Bigram-Tower** on its public subreddit **[r/BigramTower](https://www.reddit.com/r/BigramTower/)**.
 
 ## Tech Stack
 ![React](https://img.shields.io/badge/React-19.1.0-blue)
