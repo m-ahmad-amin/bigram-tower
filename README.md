@@ -19,7 +19,8 @@ Arrange shuffled words into **bigram chains**, build towers, and compete on the 
 - **Undo Last Move:** Fix mistakes without restarting  
 - **Leaderboards:** Compete with friends and other players  
 - **Help & Demo:** Interactive tutorial for new users  
-- **Archive:** Revisit past daily puzzles anytime  
+- **Archive:** Revisit past daily puzzles anytime
+- **Runs Consistently on Reddit:** The game works reliably on both mobile and desktop
 
 ## How to Play
 1. Drag or click words from the **word pool** to the **tower**.  
