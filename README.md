@@ -56,7 +56,11 @@ You can play **Bigram-Tower** on its public subreddit **[r/BigramTower](https://
 **Backend:**  
 - Devvit Web Framework: API endpoints for daily puzzles, user progress, and leaderboard  
 - Redis: Fast in-memory database for storing user scores and tower states  
-- Express: Middleware for routing and request handling   
+- Express: Middleware for routing and request handling
+
+## Try it out
+- Subreddit: [r/BigramTower](https://www.reddit.com/r/BigramTower/)
+- Game Post: [Game Post](https://www.reddit.com/r/BigramTower/s/vCs3tiqXSY)
 
 ## License
 ![License](https://img.shields.io/badge/License-BSD--3--Clause-green)
